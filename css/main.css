@@ -5,7 +5,7 @@
 }
 
 :root {
-    --gap: 1em;
+    --gap: 0.5em;
     --index: calc(1vw + 1vh);
     --color-dark: #000;
 }
@@ -35,4 +35,19 @@ body {
     font-weight: Helvetica, sans-serif;
     font-size: calc(var(--index) * .75);
     margin-top: 5px;
+}
+
+.gallery {
+    width: 30vw;
+    column-width: 2em;
+    gap: var(--gap);
+    transform: scale(8.2);
+}
+
+.gallery__item {
+    margin-bottom: var(--gap);
+}
+
+.gallery__item img {
+    width: 100%;
 }
